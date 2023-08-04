@@ -9,40 +9,42 @@ public class function {
 	
     public void ConvertirMonedas(double Minput) {
     	String opcion = (JOptionPane.showInputDialog(null, 
-    			"Elije la moneda en la que deseas hacer la conversion ", "Monedas", 
+    			"Elija la moneda a la que deseas hacer la conversion ", "Monedas", 
     			JOptionPane.PLAIN_MESSAGE, null, new Object[] 
-    			{"De Pesos Colombianos a Dólar", "De Pesos Colombianos a Euro", "De Pesos Colombianos a Libras","De Pesos Colombianos a Yen","De Pesos Colombianos a Won Coreano","De Dólar a Pesos Colombianos", "De Euro a Pesos Colombianos", "De Libras a Pesos Colombianos","De Yen a Pesos Colombianos","De Won Coreano a Pesos Colombianos"}, 
+    			{"De Pesos Argentinos a Dólar", "De Pesos Argentinos a Euro", "De Pesos Argentinos a Libras","De Pesos Argentinos a Yen",
+    					"De Pesos Argentinos a Won Coreano","De Dólar a Pesos Argentinos", "De Euro a Pesos Argentinos", "De Libras a Pesos Argentinos",
+    					"De Yen a Pesos Argentinos","De Won Coreano a Pesos Argentinos"}, 
     			"Seleccion")).toString();
         switch(opcion) {
-        case "De Pesos Colombianos a Dólar":
-        	monedas.ConvertirPesosColombianosADolares(Minput);
+        case "De Pesos Argentinos a Dólar":
+        	monedas.ConvertirPesosArgentinosADolares(Minput);
         	break;
-        case "De Pesos Colombianos a Euro":
-        	monedas.ConvertirPesosColombianosAEuros(Minput);
+        case "De Pesos Argentinos a Euro":
+        	monedas.ConvertirPesosArgentinosAEuros(Minput);
         	break;
-        case "De Pesos Colombianos a Libras":
-        	monedas.ConvertirPesosColombianosALibras(Minput);
+        case "De Pesos Argentinos a Libras":
+        	monedas.ConvertirPesosArgentinosALibras(Minput);
         	break;
-        case "De Pesos Colombianos a Yen":
-        	monedas.ConvertirPesosColombianosAYen(Minput);
+        case "De Pesos Argentinos a Yen":
+        	monedas.ConvertirPesosArgentinosAYen(Minput);
         	break;
-        case "De Pesos Colombianos a Won Coreano":
-        	monedas.ConvertirPesosColombianosAWon(Minput);
+        case "De Pesos Argentinos a Won Coreano":
+        	monedas.ConvertirPesosArgentinosAWon(Minput);
         	break;    	    	                          
-        case "De Dólar a Pesos Colombianos":
-        	pesos.ConvertirDolaresAPesosColombianos(Minput);
+        case "De Dólar a Pesos Argentinos":
+        	pesos.ConvertirDolaresAPesosArgentinos(Minput);
         	break;
-        case "De Euro a Pesos Colombianos":
-        	pesos.ConvertirEurosAPesosColombianos(Minput);
+        case "De Euro a Pesos Argentinos":
+        	pesos.ConvertirEurosAPesosArgentinos(Minput);
         	break;
-        case "De Libras a Pesos Colombianos":
-        	pesos.ConvertirLibrasAPesosColombianos(Minput);
+        case "De Libras a Pesos Argentinos":
+        	pesos.ConvertirLibrasAPesosArgentinos(Minput);
         	break;
-        case "De Yen a Pesos Colombianos":
-        	pesos.ConvertirYenAPesosColombianos(Minput);
+        case "De Yen a Pesos Argentinos":
+        	pesos.ConvertirYenAPesosArgentinos(Minput);
         	break;
-        case "De Won Coreano a Pesos Colombianos":
-            pesos.ConvertirWonAPesosColombianos(Minput);
+        case "De Won Coreano a Pesos Argentinos":
+            pesos.ConvertirWonAPesosArgentinos(Minput);
             break;
         }      
     }
